@@ -1,0 +1,282 @@
+/*FONTS*/
+@import url('https://fonts.cdnfonts.com/css/bauhaus-93');
+@font-face {
+ font-family: "Open Sans";
+ src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+        url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+h5{
+    font-family: Garamond;
+}
+h2{
+    /*font-family: 'Seymour One', sans-serif;*/
+    font-family: 'Bauhaus 93', sans-serif;
+    text-shadow:5px 7px rgba(233, 177, 41, 0.502),-4px -5px rgba(255, 255, 255, 0.5);  
+    text-transform:uppercase;
+    color:rgba(0, 0, 0, 0.9);
+    /*font-size:6em;*/ 
+}
+h3{
+    font-family: 'Bauhaus 93', sans-serif;
+     text-transform:uppercase;
+    color:rgba(255, 255, 255, 0.9);
+}
+p{
+    font-family: "Big Caslon";
+}
+
+/*HEADER*/
+header{
+   padding-left: 100px; 
+    padding-right: 100px;
+}
+a#menu.nav-link{
+    font-family:Big caslon;
+    font-size:1.2em;
+    color: #4f0a0a !important;
+}
+a#menu.nav-link:hover 
+{ color: #e9b129 !important;}
+a#menu-icones.nav-link{
+    color: #4f0a0a !important; 
+}
+a#menu-icones.nav-link:hover 
+{ color: #e9b129 !important; }
+li.icone.nav-item{
+ margin-bottom:30px;  
+}
+.icones.col-1.align-item{
+    margin-top:150px;
+}
+b.btn-primary,.btn-primary{
+    background-color:#4f0a0a !important;
+}
+b.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #e9b129 !important;
+}
+button.btn .btn-outline-primary me-2
+a href{
+    color:indianred;
+}
+.parent{
+    position:relative;
+}
+.child{
+    position:absolute;
+    bottom:0;
+}
+a.nav-link{
+    color:rgba(0, 0, 0, 0.9);
+    font-family: 'Bauhaus 93', sans-serif;
+    font-size:1.5em;
+}
+#fondslider.row{
+    background-color:rgba(79,10,10,0.6);
+    max-height: 1000px;
+}
+.col-md-6 col-lg-offset-2 text-xs-center,#summer{
+    padding-top:110px;
+    padding-bottom:100px;
+    padding-right:100px;
+    text-align:right;
+}
+
+/*SLIDER*/
+#fondslider.row{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.verticaltext_content{
+    -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+     -ms-transform: rotate(90deg);
+     -o-transform: rotate(90deg);
+     position: absolute;
+     text-transform: uppercase;
+     font-size: 20px;
+     
+     /*font-weight: bold;*/ 
+    font-family:Big Caslon;
+    word-spacing:12px;
+}
+p#salsa.verticaltext_content{
+top:450px;
+ left:455px;  
+ color:rgba(0, 0, 0, 0.9);
+}
+p#tango.verticaltext_content{
+    top:450px;
+    left:420px;
+    color:rgba(255,255,255,0.9);
+}
+button#consulter.btn.btn-outline-light:hover{
+    background-color:rgba(233,177,41,0.5);
+}
+#summer.col-md-6{
+   padding:110px 100px 100px; 
+    text-align:right;
+}
+svg #avion{
+    width: 50%;
+}
+button#bouton-offre.btn.bd-primary{ 
+    /*font-family: Big Caslon;*/
+    font-size:1em;
+}
+button#bouton-offre.btn.bd-primary:hover{
+     background-color: rgba(79,10,10,0.8);
+}
+h1#meettheteam{
+    text-transform:uppercase;
+    font-family: 'Bauhaus 93', sans-serif;
+}
+a.btn#facebook{
+    max-width: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/*TEAM*/
+ #prof.col-4{
+  padding:50px;
+}
+.ovl{
+    opacity:0;
+    transition: 0.80s;
+}
+.ovl:hover{
+    opacity:1;
+    background-color:rgba(79,10,10,0.6); 
+}
+style="background-image:url(img/picturecard1.png);"
+#ecran2.container.text-center {
+    padding-top:3rem;
+    padding-bottom:3rem;
+}
+#bouton-offre.btn.bd-primary{
+   position:absolute;
+    margin-left: -70px;
+    margin-top:-20px;
+    background-color: rgb(233,177,41);
+    border-radius:50px;
+    box-shadow: rgba(255, 255, 255, 0.17) 0px -23px 25px 0px inset, rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(0,0,0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    /*box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;*/
+}
+#offres.card .card-cover .h-100 .overflow-hidden .text-white{
+    margin-bottom: 70px;
+}
+.b-example-divider{
+    height:4rem;
+    background-color: rgba(O,0,0,0.1);
+    border:solid rgba(0,0,0,.15);
+    border-width:1px 0 ;
+    box-shadow:inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15) ;
+}
+#ecran2.container.text-center{
+    padding:30px 40px 30px 40px;
+}
+.d-flex.flex-column.text-light.text-shadow-1{
+    padding-top:20px;
+     padding-bottom:20px;
+}
+#carre.col{
+   margin-bottom:70px;
+}
+#prof.col-4{
+    float:left;
+}
+/*RESPONSIVE*/
+
+@media only screen and (max-width :1200px){
+ 
+ p.verticaltext_content{
+    -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+    }
+p#salsa.verticaltext_content{
+    top:55px;
+    }
+p#tango.verticaltext_content{
+    top:90px;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .child{
+        position:inherit;
+    }          
+p.verticaltext_content{ 
+    font-size:18px;
+    position:inherit;
+    margin-left: 220px
+     }
+    
+p#salsa.verticaltext_content{
+    top:635px;
+    margin-bottom: -40px;
+}
+p#tango.verticaltext_content{
+    margin-bottom: -50px;
+    top:670px;
+ }
+}
+
+@media only screen and (max-width : 576px){
+p.verticaltext_content{ 
+    font-size:16px;
+    }
+    #salsa.verticaltext_content{
+    float:right;
+    margin: 0px 0px 0px 0px;
+}
+p#tango.verticaltext_content{
+   float:left;
+    margin: 0px 0px 0px 0px;
+}
+#summer.col-md-6{
+padding-top:50px; 
+text-align:center;
+}
+#icones.col-1.align-item{
+    display:none;
+    }
+    
+    #prof.col-4{
+       padding:inherit;
+    align-items: center;
+       /* box-sizing:inherit;*/
+    }
+    
+header{
+    padding-left:auto;
+    padding-right: none;
+    }
+    a#menu.nav-link{
+    font-size:0.9em;
+}
+}
+
+#offres.card.card-cover.overflow-hidden.text-white{
+   
+}
+
+
+
+/*.col-xs-12 #meettheteam.container-link article>div .section-content{
+    top:60%;
+    position:absolute;
+    opacity:.9;
+    transition-property:top;
+    transition-duration: .5s;
+    transition-delay:0s;
+    background-color:#ffffff;
+    padding:15px;
+    height:400px;
+}*/
+
+
+
+
+
+    
+    
