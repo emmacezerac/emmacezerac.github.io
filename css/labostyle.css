@@ -1,0 +1,71 @@
+body{
+	padding:0;
+	margin:0;
+	font-family:'palatino linotype';
+	background-color:black;
+}
+header{
+	background-color:black;
+}
+
+#ecran.jumbotron-fluid{
+	padding:0;
+}
+/* .row align-items-center{ */
+	/* background-color:black; */
+/* } */
+
+#ecran_1{
+	background-color:black;
+	justify-content:center;
+	padding:0;
+	color:#F7F0F0;
+	/* height:1000px; */
+	/* height:100%vh; */
+	/* float:left; */
+}
+
+header{
+	display:block;
+	height:230px;
+	width:100%;
+	background-color:black;
+}
+#animation_container{
+	margin:0 auto;
+}
+#texte{
+	margin:0 auto;
+	padding-right:200px;
+}
+#logo.col-xl-2{
+	padding:10px 90px 0 90px;
+	
+}
+@viewport{
+	width:device-width;
+}
+#navbar_1{
+	padding-left:100px;
+}
+svg,#avion{
+	fill:#F7F0F0;
+	float:left;
+	padding:0px 10px 0px 10px;
+	margin-right:10px;
+}
+#email{
+	color:#F7F0F0;
+}
+/* --------FOOTER---------- */
+
+#reseaux_sociaux{
+	display:block;
+	width:100%;
+}
+.bg{
+	background-color:#000000; /*couleur du footer*/
+}
+footer.bg text-center text-white{
+	
+}

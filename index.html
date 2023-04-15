@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio</title>
+         <meta name="description" content="Emma Cezerac's portfolio">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.css"/>
+		<link rel="stylesheet" href="css/bootstrap-grid.css"/>
+		<link rel="stylesheet" href="css/bootstrap-reboot.css"/>
+		<!-- -----ANIMATION---- -->
+		<!-- <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> -->
+		<script src="js/codejs.js"></script>
+		<script src="js/animation.js?1627053850100"></script>
+		<script>
+			var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+			function init() {
+				canvas = document.getElementById("canvas");
+				anim_container = document.getElementById("animation_container");
+				dom_overlay_container = document.getElementById("dom_overlay_container");
+				var comp=AdobeAn.getComposition("D5A29BDA7D91334CADDDCFD98DA82E1B");
+				var lib=comp.getLibrary();
+				var loader = new createjs.LoadQueue(false);
+				loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+				loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+				var lib=comp.getLibrary();
+				loader.loadManifest(lib.properties.manifest);
+			}
+			function handleFileLoad(evt, comp) {
+				var images=comp.getImages();	
+				if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+			}
+			function handleComplete(evt,comp) {
+				//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+				var lib=comp.getLibrary();
+				var ss=comp.getSpriteSheet();
+				var queue = evt.target;
+				var ssMetadata = lib.ssMetadata;
+				for(i=0; i<ssMetadata.length; i++) {
+					ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+				}
+				exportRoot = new lib.animation();
+				stage = new lib.Stage(canvas);	
+				//Registers the "tick" event listener.
+				fnStartAnimation = function() {
+					stage.addChild(exportRoot);
+					createjs.Ticker.framerate = lib.properties.fps;
+					createjs.Ticker.addEventListener("tick", stage);
+				}	    
+				//Code to support hidpi screens and responsive scaling.
+				AdobeAn.makeResponsive(false,'both',false,1,[canvas,anim_container,dom_overlay_container]);	
+				AdobeAn.compositionLoaded(lib.properties.id);
+				fnStartAnimation();
+			}
+</script>
+
+	</head>
+		
+<body onload="init();">
+
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+    <!-- NAVIGATION --> 
+<!-- Logo -->
+<a class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" href="#"style="">
+    <img src="img/logo-bleu.png" alt="logo_emma_cezerac" height="120">
+</a> 
+ <nav class="navbar-container"> 
+             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" >
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Experiences</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                  </li>  
+                </ul>
+    </nav>
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-dark">CV</button>
+        <button type="button" id="contact-button"class="btn btn-primary">Contact</button> 
+          
+    </div>       
+  
+     <!-- JUMBOTRON --> 
+ <div class="jumbotron jumbotron-fluid" id="ecran">
+	<div class ="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-xl-8">
+				<img width="105%" src="img/ILLU_JUMBO.png"/> 
+			</div>
+            
+			<div class="col-xl-4" id="texte">
+                <h4>Emma Cezerac </h4>
+                <h2 class="display-4">PORTFOLIO</h2>
+				<h4 id="jumbo">Webdesign | Illustration</h4>
+				<p class="lead" style="line-height: 2;">This website of my own creation contains several examples of what I have to bring to an agency. I let you find your way through my desk ; it can be messy but you may find something that could catch your eye  </p>
+				<!-- <form class="form-inline">
+					<label class="sr-only"for="yourEmail">Email</label>
+					<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+					<div class="input-group-addon">@</div>
+					<input type="text" class="form-control"id="yourEmail" place holder="Your Email">
+					</div>
+					<button type="button" class="btn btn-primary my-2 my-sm-0">Signer</button>
+					</form>-->
+			</div>
+		</div>
+        
+	</div>
+</div>   
+ <div class="b-example-divider"></div>   
+</header>    
+<main>    
+ <!-- DIVIDER
+<hr class="hr" style="width:100%;" />-->
+
+ <!-- PROJETS -->    
+ <div class="container" id="projets"> 
+     
+     <div class="row justify-content-center">
+        <h4 style="font-size: 2.7rem;">PROJECTS</h4>
+     </div>
+     
+     <div class="row">
+         <div class="col">
+	       <div class="grid">
+					<figure class="effect-bubba" id="rueda">
+						<img src="img/carre-rueda-siempre.png" alt="rueda-siempre-projet"/>
+						<figcaption>
+							<h2> <span>Rueda siempre</span></h2>
+							<p>Communication, identité visuelle, intégration</p>
+							<a href="rueda_siempre/index.html">En savoir plus</a>
+						</figcaption>			
+					</figure>
+					<!-- <figure class="effect-bubba"> -->
+						<!-- <img src="img/16.jpg" alt="img16"/> -->
+						<!-- <figcaption> -->
+							<!-- <h2>Fresh <span>Bubba</span></h2> -->
+							<!-- <p>Bubba likes to appear out of thin air.</p> -->
+							<!-- <a href="#">View more</a> -->
+						<!-- </figcaption>			 -->
+					<!-- </figure> -->
+			</div>
+         </div>
+         <div class="col">
+	       <div class="grid">
+					<figure class="effect-bubba" id="candy">
+						<img src="img/badge-candy-people.png" alt="candy-people-store"/>
+						<figcaption>
+							<h2> <span>Candy People Store</span></h2>
+							<p>Communication, identité visuelle, intégration</p>
+							<a href="#">En savoir plus</a>
+						</figcaption>			
+					</figure>
+			</div>
+         </div>
+         <div class="col">
+	       <div class="grid">
+					<figure class="effect-bubba" id="rueda">
+						<img src="img/rueda_siempre_fig.jpg" alt="rueda-siempre-projet"/>
+						<figcaption>
+							<h2> <span>CRIPE E2I</span></h2>
+							<p>Charte graphique, identité visuelle</p>
+							<a href="#">En savoir plus</a>
+						</figcaption>			
+					</figure>
+			</div>
+         </div>
+         
+    </div>
+</div>      
+</main>    
+    
+<footer>
+</footer>
+    
+    
+    
+</body>
+		
+		
+		</html>
