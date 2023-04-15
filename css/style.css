@@ -83,6 +83,9 @@ hr {
 }
 /* ------PROJECTS------- */
 /* Custom style effect bubba*/
+.container#projets{
+    margin-top:100px;
+}
 figure#candy.effect-bubba{
     background:#579BB1;
 }
