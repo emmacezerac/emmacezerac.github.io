@@ -60,6 +60,7 @@
 				AdobeAn.compositionLoaded(lib.properties.id);
 				fnStartAnimation();
 			}
+            document.querySelector(".navbar-toggler").addEventListener("click", function(e){ document.querySelector("#portfolionavbar").classList.toggle("show"); }); 
 </script>
 
 	</head>
@@ -67,13 +68,25 @@
 <body onload="init();">
 
 <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-    <!-- NAVIGATION --> 
+    
+    <!--Navbar-->
+
+<nav class="navbar navbar-expand-lg bg-light navbar-light" id="portfolionavbar"> 
+    <div class="container">
 <!-- Logo -->
-<a class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" href="#"style="">
+<a class="navbar-brand" href="#">
     <img src="img/logo-bleu.png" alt="logo_emma_cezerac" height="120">
 </a> 
- <nav class="navbar-container"> 
-             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" >
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+                >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navmenu""">
+             <ul class="navbar-nav ms-auto" >
                   <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                   </li>
@@ -84,13 +97,14 @@
                     <a class="nav-link" href="#">Projects</a>
                   </li>  
                 </ul>
-    </nav>
-      <div class="col-md-3 text-end">
+   </div>
+      <!--<div class="col-md-3 text-end">
         <button type="button" class="btn btn-outline-dark">CV</button>
-        <button type="button" id="contact-button"class="btn btn-primary">Contact</button> 
-          
-    </div>       
-  
+        <button type="button" id="contact-button"class="btn btn-primary">Contact</button>    
+    </div>  --> 
+        
+    </div>
+   </nav>
      <!-- JUMBOTRON --> 
  <div class="jumbotron jumbotron-fluid" id="ecran">
 	<div class ="container-fluid">
@@ -113,18 +127,20 @@
 					<button type="button" class="btn btn-primary my-2 my-sm-0">Signer</button>
 					</form>-->
 			</div>
-		</div>
-        
+		</div>       
 	</div>
 </div>   
- <div class="b-example-divider"></div>   
 </header>    
 <main>    
- <!-- DIVIDER
-<hr class="hr" style="width:100%;" />-->
-
+    
+    
+ <!-- DIVIDER 1-->
+<div class="b-example-divider"></div>  
+  <!-- DIVIDER-->   
+    
  <!-- PROJETS -->    
- <div class="container" id="projets"> 
+ <div class="container" id="projets">     
+     
      <div class="row">
          <div class="col">
 	       <div class="grid">
@@ -133,7 +149,7 @@
 						<figcaption>
 							<h2> <span>Rueda siempre</span></h2>
 							<p>Communication, identité visuelle, intégration</p>
-							<a href="rueda_siempre/index_rueda.html">En savoir plus</a>
+							<a href="rueda_siempre/index.html">En savoir plus</a>
 						</figcaption>			
 					</figure>
 					<!-- <figure class="effect-bubba"> -->
@@ -170,6 +186,7 @@
 					</figure>
 			</div>
          </div>
+         
     </div>
 </div>      
 </main>    
