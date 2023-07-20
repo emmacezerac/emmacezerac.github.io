@@ -12,10 +12,11 @@
 		<link rel="stylesheet" href="bxslider/dist/jquery.bxslider.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/portfoliostyle.css" />
 		<link rel="stylesheet" href="css/bootstrap.css"/>
 		<link rel="stylesheet" href="css/bootstrap-grid.css"/>
 		<link rel="stylesheet" href="css/bootstrap-reboot.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
 		<!-- -----ANIMATION---- -->
 		<!-- <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script> -->
 		<script src="js/codejs.js"></script>
@@ -61,6 +62,8 @@
 				fnStartAnimation();
 			}
             document.querySelector(".navbar-toggler").addEventListener("click", function(e){ document.querySelector("#portfolionavbar").classList.toggle("show"); }); 
+            
+            src='https://widgets.sociablekit.com/instagram-hashtag-feed/widget.js' async defer></script>
 </script>
 
 	</head>
@@ -71,30 +74,40 @@
     
     <!--Navbar-->
 
-<nav class="navbar navbar-expand-lg bg-light navbar-light" id="portfolionavbar"> 
-    <div class="container">
+<nav class="navbar navbar-expand-lg" id="portfolionavbar">   
 <!-- Logo -->
 <a class="navbar-brand" href="#">
-    <img src="img/logo-bleu.png" alt="logo_emma_cezerac" height="120">
+<!-- Logo -->
+<!-- Toggler-->
 </a> 
         <button
                 class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#navmenu"
-                >
-                <span class="navbar-toggler-icon"></span>
+                data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"><svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+  <path
+        class="line top"
+        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+  <path
+        class="line middle"
+        d="m 30,50 h 40" />
+  <path
+        class="line bottom"
+        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+</svg></span>
             </button>
-        <div class="collapse navbar-collapse" id="navmenu""">
+<!-- Toggler-->  
+        <div class="collapse navbar-collapse" id="navmenu">
              <ul class="navbar-nav ms-auto" >
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#"></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Experiences</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#">Photography</a>
                   </li>  
                 </ul>
    </div>
@@ -102,8 +115,6 @@
         <button type="button" class="btn btn-outline-dark">CV</button>
         <button type="button" id="contact-button"class="btn btn-primary">Contact</button>    
     </div>  --> 
-        
-    </div>
    </nav>
      <!-- JUMBOTRON --> 
  <div class="jumbotron jumbotron-fluid" id="ecran">
@@ -190,11 +201,85 @@
     </div>
 </div>      
 </main>    
+
     
-<footer>
+    <!-- FOOTER -->
+<footer class="text-center text-white"style="background-color: #002431; padding-top: 20px;">
+
+  <div class="container p-4">
+
+<div class="row ">
+        <!--Grid column-->
+        <div class="col-lg-3">
+            <div class="row justify-content-md-center">
+              <a class="footer-brand" href="#"></a>
+            </div>
+            <div class="row">
+                <ul class="list-unstyled mb-0">
+            <li>
+              <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #8c1729;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+            </li>
+            <li>
+              <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #8c1729;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+            </li>
+            <li>
+              <a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #8c1729;"
+        href="#!"
+        role="button">
+                  <i class="fab fa-tumblr"></i></a>
+            </li>
+          </ul>
+            </div>
+        </div>
+      
+        <div class="col-lg-5" id="intro-footer">
+              <h3>About me</h3>
+              <p>Junior front-end dev with illustration and photography skills, I am currently living between France and Switzerland. </p>
+                <p><i class="fas fa-home me-3 text-secondary"></i> Satigny, Switzerland</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            emma.cezerac@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 41 79 856 20 84</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 33 7 66 13 15 69</p>
+        </div>
+    <!--Instagram feed-->      
+        <div class="col-lg-3" id="instagram">
+              <h3>Follow me<a
+        class="btn text-white btn-floating m-1"
+        style="background-color: #8c1729;"
+        href="#!"
+        role="button">
+                  <i class="fab fa-instagram"></i></a></h3>
+              <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+              <div class="elfsight-app-62c54de0-597b-4693-991c-e0d78e1db588"></div>
+        </div>
+<!--Instagram feed-->   
+</div>
+    
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Emma Cezerac on Booststrap</a>
+    </div>
+  <!--ROW 3-->        
+
+  </div>  
 </footer>
-    
-    
+ <!-- FOOTER --> 
     
 </body>
 		
