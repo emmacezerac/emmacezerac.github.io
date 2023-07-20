@@ -40,7 +40,8 @@ nav#portfolionavbar.navbar.navbar-expand-lg{
 }
 
 span.navbar-toggler-icon{
-
+    width:auto;
+    height:auto;
 }
 svg.ham.hamRotate.ham1{
   margin-top:-15px;  
