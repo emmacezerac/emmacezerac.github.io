@@ -1,0 +1,132 @@
+
+/*****FONTS********/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+h3, h6, h5{
+font-family: 'Pacifico', cursive;
+}
+body{
+    padding-top:50px;
+}
+/*****BRAND********/
+
+nav.fixed-top{
+    background-color:azure;
+    display:block;
+    width:100%;
+    height:70px;
+}
+
+a.navbar-brand{
+    position:relative;
+    z-index: 2000;
+}
+a.navbar-brand.navbar-brand-scroll{
+    display:block;
+    width:50px;
+    height:50px;
+    margin-left: 50px;
+    margin-top:-60px;
+}
+.navbar-brand-scroll {  
+  transform: translate(-575px,) scale(.4,.4) rotate3d(0,0,1,1turn);
+    position:fixed;
+    /**float:left;*/
+}
+.nav-scroll{
+    transform: translate3d(0,-525px,1);
+    /**margin-left:500px;**/
+}
+.container navbar#navbar_top{
+            background-color:azure;
+}  
+.col-md-3.text-end{
+    display:block;
+    float: right;
+    margin-top:-40px;
+}
+/*****SLIDER********/
+#slider{
+    margin-top:-60px; 
+}
+/*****CUSTOM BUTTON********/
+button.btn-outline {
+  color: #4fbfa8;
+  background-color: #ffffff;
+  border-color: #4fbfa8;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+button.btn-outline {
+  color: #DD5454;
+  background-color: #ffffff;
+  border-color: #DD5454;
+  font-weight: bold;
+  border-radius: 0;
+}
+button.btn-outline:hover,
+button.btn-outline:active,
+button.btn-outline:focus,
+button.btn-outline.active {
+  background: #DD5454;
+  color: #ffffff;
+  border-color: #DD5454;
+  
+}
+button.btn-colour-1 {
+  color: #fff;
+  background-color: #579BB1;
+  border-color:#47314F ;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  border-radius: -10;
+}
+button.btn-colour-1:hover,
+button.btn-colour-1:active,
+button.btn-colour-1:focus,
+button.btn-colour-1.active {
+  /* let's darken #004E64 a bit for hover effect */
+  background: #47314F;
+  color: #ffffff;
+  border-color: #003D4F;
+}
+
+body {
+  padding: 20px 0;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/*****ICONES********/
+a#menu.nav-link{
+    color:#47314F;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.3em;
+    
+}
+a#menu.nav-link:hover{
+    color:#DD5454;
+    
+}
+iframe#gift{
+    margin-bottom: -40px;
+}
+iframe#gift{
+padding-right:;
+    }
+/*RESPONSIVE*/
+
+@media only screen and (max-width :1200px){
+ 
+}
+
+@media only screen and (max-width : 768px){
+    
+}
+
+@media only screen and (max-width : 576px){
+    
+}
